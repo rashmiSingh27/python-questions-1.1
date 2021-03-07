@@ -1,0 +1,62 @@
+Q1-What are the common built-in data types in Python?
+Ans-Data types can be grouped into the following catetgories-
+ *None Type-Represents the NULL values in Python
+ *Numeric Types-int,float,complex,bool
+ *Sequence Types-list,tuples,range,str
+ *Mapping Types-dict
+ *set type-set(mutable),frozenset(immutable)
+
+Q2-Why set cannot not be used as keys of dictionary?
+ans-Set are mutable in nature and dictionary keys should be immutable and unique hence they  cannot be used as keys in dictionaries. Frozen sets are immutable and hashable in nature and can be used as keys for dictionary.
+Q3-what are hashable objects?
+Ans-An object is said to be hashable if they have a hash value which remains the same during its lifetime. All bills in immutable objects in Python hashable. Containers like list and dictionaries are not hashable while immutable containers like tuple is hashable. Are Hash table by default.
+Q4- What is lambda in Python? Why is it used?
+Ans-Lambda functions are anonymous functions in Python they are also called as nameless functions they can only have one expression but can have multiple arguments.
+they are used in situations where the functions are required for a short period of time.
+Q5-What is pass keyword in Python? 
+Ans-Pass keyword in Python represents nulloperation.it is used in place where the lines of codes are not written yet and left empty for future and to avoid errors during execution.
+Q6-What is break, continue and pass in Python?
+Ans-Break statement is used to terminate the loop and comes out of the loop and skip next lines after the break statement. 
+continue statement is used to terminate the current iteration of the loop and skip the next lines after it and the control will go to the next iteration. 
+pass statement is used to fill the empty blocks of code to avoid error during the execution
+Q7-What are generators and iterators in Python? 
+Ans-Iterators are object that can be iterated upon which means we can traverse through all its values and which adheres to the the iterator protocol of python which means it implements the __iter__() and __next__() methods. 
+
+Generator functions allow you to declare a function that behaves like an iterator. Generated are defined as normal functions but with atleast one yield statement instead of return. Difference between yeild statement and a return statement is that it does not terminates the function entirely but pauses the function saves the states  and later continuous from there on successive calls.
+Q8-What are help() and dir() methods? 
+Ans-Help function returns the documentation of module,functions, keywords,etc. if no argument is passed in help() then it will return an interactive help utility on the console. dir() method returns the methods,arguments,attributes of the object it is called upon it aims to produce the most relevant data rather than the complete information. for models and libraries,it returns list of attributes contained in that module. for class object ,it returns valid list of attributes and method with no argument passed it returns a list of attributes in the current scope
+Q9-Explain split and join function in Python? 
+Ans-Split() function splits a string into a list based on the delimiter provided in the function argument. join function is a flexible way to to create string from iterable objects like list string and tuple it joins each element of the table by string separator and returns the concatenated string.
+Q10-What is __init__?
+Ans-__init__ is a method or constructor in Python. This method is automatically called to allocate memory when a new object/ instance of a class is created. All classes have the __init__ method.
+Q11-What is a dictionary in Python?
+Ans-The built-in datatypes in Python is called dictionary. It defines one-to-one relationship between keys and values. Dictionaries contain pair of keys and their corresponding values. Dictionaries are indexed by keys.
+Q12- What does this mean: *args, **kwargs? And why would we use it?
+Ans- We use *args when we aren’t sure how many arguments are going to be passed to a function, or if we want to pass a stored list or tuple of arguments to a function. **kwargs is used when we don’t know how many keyword arguments will be passed to a function, or it can be used to pass the values of a dictionary as keyword arguments. The identifiers args and kwargs are a convention, you could also use *bob and **billy but that would not be wise.
+Q13-What are negative indexes and why are they used?
+Ans-The sequences in Python are indexed and it consists of the positive as well as negative numbers. The numbers that are positive uses ‘0’ that is uses as first index and ‘1’ as the second index and the process goes on like that.
+
+The index for the negative number starts from ‘-1’ that represents the last index in the sequence and ‘-2’ as the penultimate index and the sequence carries forward like the positive number.
+Q14-What is zip() function in Python?
+Ans-Python zip() function returns a zip object, which maps a similar index of multiple containers. It takes an iterable, convert into iterator and aggregates the elements based on iterables passed. It returns an iterator of tuples.
+Q15-What is the difference between remove() function and del statement?
+Ans-You can use the remove() function to delete a specific object in the list.
+
+If you want to delete an object at a specific location (index) in the list, you can either use del or pop.
+Q16-How to remove whitespaces from a string in Python?
+Ans-To remove the whitespaces and trailing spaces from the string, Python providies strip([str]) built-in function. This function returns a copy of the string after removing whitespaces if present. Otherwise returns original string.
+Q17-What is shuffle in Python?
+Ans-The shuffle() method takes a sequence, like a list, and reorganize the order of the items.This method changes the original list, it does not return a new list.
+Q18-What are the different types of operators in Python?
+Ans-Arithmetic Operators
+Relational Operators
+Assignment Operators
+Logical Operators
+Membership Operators
+Identity Operators
+Bitwise Operators
+
+Q19-What is the usage of enumerate () function in Python?
+Ans-The enumerate() function is used to iterate through the sequence and retrieve the index position and its corresponding value at the same time.
+Q20-What is the range() function and what are its parameters?
+Ans-The range() function is used to generate a list of numbers. Only integer numbers are allowed, and hence, parameters can be both negative and positive.
